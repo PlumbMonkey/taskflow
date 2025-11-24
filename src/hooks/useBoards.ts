@@ -22,9 +22,12 @@ export function useCreateBoard() {
 
   return useMutation({
     mutationFn: async (name: string) => {
+      const { data: { user }, error: authError } = await supabase.auth.getUser()
+      if (authError || !user) throw new Error('Not authenticated')
+
       const { data, error } = await supabase
         .from('boards')
-        .insert({ name })
+        .insert({ name, user_id: user.id })
         .select()
         .single()
 

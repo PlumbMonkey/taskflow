@@ -94,7 +94,7 @@ export function useUpdateTask() {
         order_index?: number
       }
     ) => {
-      const { id, ...updates } = variables
+      const { id, boardId, ...updates } = variables
       const { data, error } = await supabase
         .from('tasks')
         .update(updates)

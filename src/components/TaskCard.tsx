@@ -11,12 +11,18 @@ export default function TaskCard({ task, onClick }: TaskCardProps) {
     id: task.id,
   })
 
+  const handleClick = (e: React.MouseEvent) => {
+    if (!isDragging) {
+      onClick()
+    }
+  }
+
   return (
     <div
       ref={setNodeRef}
       {...attributes}
       {...listeners}
-      onClick={onClick}
+      onClick={handleClick}
       className={`p-3 bg-white rounded-lg border border-gray-200 cursor-grab hover:shadow-md transition ${
         isDragging ? 'opacity-50 ring-2 ring-blue-500' : ''
       }`}

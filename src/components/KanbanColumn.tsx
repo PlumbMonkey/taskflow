@@ -15,10 +15,10 @@ export default function KanbanColumn({
   tasks,
   onTaskClick,
 }: KanbanColumnProps) {
-  const { setNodeRef } = useDroppable({ id: status, data: { status } })
+  const { setNodeRef, isOver } = useDroppable({ id: status, data: { status } })
 
   return (
-    <div className="flex flex-col bg-gray-100 rounded-lg p-4 min-h-96">
+    <div className={`flex flex-col bg-gray-100 rounded-lg p-4 min-h-96 transition ${isOver ? 'bg-blue-50 ring-2 ring-blue-400' : ''}`}>
       <h2 className="font-semibold text-gray-900 mb-4">
         {statusLabel} <span className="text-gray-600 text-sm">({tasks.length})</span>
       </h2>

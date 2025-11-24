@@ -9,3 +9,12 @@
 body {
   @apply antialiased;
 }
+
+/* Enable drag and drop */
+[data-dnd-draggable] {
+  touch-action: none;
+}
+
+[data-dnd-droppable] {
+  touch-action: none;
+}
