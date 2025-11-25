@@ -1,0 +1,3 @@
+-- Enable RLS (Row Level Security) for production
+ALTER TABLE boards ENABLE ROW LEVEL SECURITY;
+ALTER TABLE tasks ENABLE ROW LEVEL SECURITY;
