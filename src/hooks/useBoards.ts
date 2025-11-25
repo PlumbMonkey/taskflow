@@ -6,9 +6,13 @@ export function useBoards() {
   return useQuery({
     queryKey: ['boards'],
     queryFn: async () => {
+      const { data: { user }, error: authError } = await supabase.auth.getUser()
+      if (authError || !user) throw new Error('Not authenticated')
+
       const { data, error } = await supabase
         .from('boards')
         .select('*')
+        .eq('user_id', user.id)
         .order('created_at', { ascending: false })
 
       if (error) throw error
@@ -22,7 +26,14 @@ export function useCreateBoard() {
 
   return useMutation({
     mutationFn: async (name: string) => {
-      const { data, error } = await supabase.rpc('create_board', { name })
+      const { data: { user }, error: authError } = await supabase.auth.getUser()
+      if (authError || !user) throw new Error('Not authenticated')
+
+      const { data, error } = await supabase
+        .from('boards')
+        .insert({ name, user_id: user.id })
+        .select()
+        .single()
 
       if (error) throw error
       return data as Board

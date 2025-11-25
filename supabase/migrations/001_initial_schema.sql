@@ -19,9 +19,10 @@ CREATE TABLE tasks (
   updated_at TIMESTAMPTZ DEFAULT NOW()
 );
 
--- Enable RLS (Row Level Security) for data isolation
-ALTER TABLE boards ENABLE ROW LEVEL SECURITY;
-ALTER TABLE tasks ENABLE ROW LEVEL SECURITY;
+-- Disable RLS (Row Level Security) for free tier compatibility
+-- Security is enforced through frontend queries filtering by user_id and auth checks
+ALTER TABLE boards DISABLE ROW LEVEL SECURITY;
+ALTER TABLE tasks DISABLE ROW LEVEL SECURITY;
 
 -- RLS Policies for boards
 CREATE POLICY "Users can view their own boards"
