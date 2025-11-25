@@ -14,11 +14,11 @@ export default function ResetPassword() {
   useEffect(() => {
     // Check if user has a valid password reset session
     supabase.auth.getSession().then(({ data: { session } }) => {
-      if (session?.user && session.user.recovery_sent_at) {
+      if (session?.user) {
         setIsValidSession(true)
       } else {
         setError('Invalid or expired reset link. Please request a new password reset.')
-        setTimeout(() => navigate('/'), 3000)
+        setTimeout(() => navigate('/login'), 3000)
       }
     })
   }, [navigate])
@@ -45,7 +45,7 @@ export default function ResetPassword() {
       if (error) throw error
 
       setSuccess('Password updated successfully! Redirecting to login...')
-      setTimeout(() => navigate('/'), 2000)
+      setTimeout(() => navigate('/login'), 2000)
     } catch (err) {
       setError(err instanceof Error ? err.message : 'Failed to reset password')
     } finally {
