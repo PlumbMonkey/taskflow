@@ -6,16 +6,28 @@
 ![React](https://img.shields.io/badge/React-18.2-blue)
 ![Supabase](https://img.shields.io/badge/Supabase-Latest-green)
 
-> **Real-time collaboration for focused teams.** A lightweight Kanban board that syncs instantly across all users — built to demonstrate production-ready full-stack development skills.
+> **Real-time collaboration for focused teams.** A production-ready Kanban board that syncs instantly across all users — built to demonstrate full-stack development capabilities and showcase my ability to deliver polished, scalable applications. **I'm open to freelance projects!**
 
-## 🎯 Quick Start
+---
 
-**Live Demo:** [https://taskflow.vercel.app](https://taskflow.vercel.app)  
-**Demo Credentials:** 
-- Email: `demo@taskflow.app`
-- Password: `DemoPass123!`
+## 🎯 Why I Built This
 
-**Built by:** [PlumbMonkey](https://github.com/plumbmonkey) | [Portfolio](https://plumbmonkey.dev) | [LinkedIn](https://linkedin.com/in/plumbmonkey)
+This project demonstrates my full-stack development capabilities across the entire software development lifecycle:
+
+- **Architecture & Design** — How I approach system design and technology selection
+- **Frontend Excellence** — React, TypeScript, performance optimization, real-time UI updates
+- **Backend Expertise** — Database design, RLS security, API integrations
+- **DevOps & Deployment** — CI/CD pipelines, environment management, monitoring
+- **Professional Standards** — Testing, documentation, code quality, best practices
+
+**I'm actively seeking freelance opportunities** to build custom applications, features, and solutions. If you need a full-stack developer who cares about clean code and user experience, let's talk!
+
+---
+
+**Live Demo:** [https://taskflow-board-omega.vercel.app](https://taskflow-board-omega.vercel.app)  
+**Try it now:** Sign up with any email address to get started instantly!
+
+**Built by:** [Gregg](https://github.com/PlumbMonkey) | Open to Freelance Work 🚀
 
 ---
 
@@ -389,13 +401,20 @@ git push origin feature/your-feature
 
 ---
 
-## 📞 Support
+## 📞 Contact & Freelance
 
-**Questions?** Open an issue or reach out!
+**Interested in working together?** I'm open to freelance projects, contract work, and full-time opportunities.
 
-- 🐙 [GitHub Issues](https://github.com/plumbmonkey/taskflow/issues)
-- 💼 [LinkedIn](https://linkedin.com/in/plumbmonkey)
+- 🐙 [GitHub](https://github.com/PlumbMonkey)
+- 💼 [LinkedIn](https://linkedin.com/in/PlumbMonkey)
 - 📧 [Email](mailto:gregg@plumbmonkey.dev)
+- 🌐 [Portfolio](https://plumbmonkey.dev)
+
+**Have a project in mind?** Let's chat! I specialize in:
+- Full-stack web applications (React + Node/Supabase)
+- Real-time features and collaboration tools
+- Performance optimization and scalability
+- API design and backend architecture
 
 ---
 
@@ -405,18 +424,22 @@ git push origin feature/your-feature
 
 ---
 
-## 🎓 About PlumbMonkey
+## 🎓 About Me
 
-I'm **PlumbMonkey** (Gregg Henwood), a full-stack developer specializing in creative software and audio tools.
+I'm **Gregg**, a full-stack developer with a passion for building clean, scalable applications that solve real problems. I specialize in modern web technologies and have a strong focus on code quality, user experience, and best practices.
 
-**Other Projects:**
-- [Lujac Music Collab Assistant](https://github.com/PlumbMonkey/lujac) — AI-powered music production assistant
-- [Beat Detector](https://github.com/PlumbMonkey/beat-detector) — Real-time audio visualizer
+**Skills:**
+- Frontend: React, TypeScript, Tailwind CSS, modern JavaScript
+- Backend: Node.js, Supabase, PostgreSQL, API design
+- DevOps: Vercel, GitHub Actions, Docker, CI/CD
+- Tools: Git, Vite, ESLint, testing frameworks
 
-**Connect:**
+**Currently:** Open to freelance projects and exciting opportunities!
+
+**Connect with me:**
 - 🌐 [Portfolio](https://plumbmonkey.dev)
-- 💼 [LinkedIn](https://linkedin.com/in/plumbmonkey)
-- 🐙 [GitHub](https://github.com/plumbmonkey)
+- 💼 [LinkedIn](https://linkedin.com/in/PlumbMonkey)
+- 🐙 [GitHub](https://github.com/PlumbMonkey)
 
 ---
 
@@ -426,16 +449,6 @@ I'm **PlumbMonkey** (Gregg Henwood), a full-stack developer specializing in crea
 
 ---
 
-**Built with ❤️ by PlumbMonkey**
+**Built with ❤️ and a focus on clean code & best practices**
 
-*This project demonstrates production-ready full-stack development skills including real-time features, security best practices, testing, CI/CD, and professional documentation.*
-
----
-
-## ⭐ If you found this helpful, please consider:
-- Starring the repo
-- Sharing feedback
-- Using it as inspiration for your own projects
-- Connecting on LinkedIn
-
-Thank you! 🙏
+*TaskFlow demonstrates production-ready full-stack development skills including real-time features, security best practices, testing, CI/CD, and professional documentation. If you're looking for a developer who takes pride in their work, let's connect!*
